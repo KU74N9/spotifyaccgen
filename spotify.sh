@@ -16,7 +16,7 @@ echo ""
 printf "$cyan ======================================= \n"
 printf "$yell      -+SPOTIFY ACCOUNT CREATOR+-\n"
 printf "$cyan ======================================= \n"
-printf "$red        CREATED BY$white @BangBurnok_TECH243 \n"
+printf "$red        CREATED BY$white @BangBurnok_TECHKA \n"
 printf "$cyan ======================================= \n"
 printf "$white"
 cat <<EOF
