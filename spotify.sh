@@ -23,7 +23,7 @@ cat <<EOF
 EOF
 daftar(){
 	random=$(echo $RANDOM)
-	curl=$(curl -s "https://www.spotify.com/id-id/signup?flow_ctx=dcafe031-07cf-4369-81b2-19f9a96338d1%3A1762553298" --data "iagree=true&birth_day=17&platform=Android-ARM&creation_point=client_mobile&password=$pswd&key=142b583129b2df829de3656f9eb484e6&birth_year=2000&email=$user.$random@mail.id&gender=male&app_version=849800892&birth_month=12&password_repeat=$pswd")
+	curl=$(curl -s "https://spclient.wg.spotify.com:443/signup/public/v1/account/" --data "iagree=true&birth_day=17&platform=Android-ARM&creation_point=client_mobile&password=$pswd&key=142b583129b2df829de3656f9eb484e6&birth_year=2000&email=$user.$random@mail.id&gender=male&app_version=849800892&birth_month=12&password_repeat=$pswd")
 	status=$(echo $curl | grep -Po '(?<=status":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 	if [[ $status =~ "1" ]]; 
     	then
